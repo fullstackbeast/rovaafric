@@ -1,0 +1,16 @@
+.sidenav-container {
+    position: fixed;
+    /* border: 2px solid red; */
+    width: 250px;
+    height: 89vh;
+    margin-left: -10px;
+    top: 0;
+    background-color: white;
+    box-shadow: 2px 2px 2px #eee;
+    transform: translateX(-300px);
+    transition: .8s;
+}
+
+.sidenav-container.open {
+    transform: translateX(0px);
+}
