@@ -1,0 +1,12 @@
+.appointment-card-container{
+    /* border: 2px solid red; */
+    padding: 20px 10px;
+    background-image: url(../../Images/topography-background.svg);
+    background-size: contain;
+    background-color: #022916;
+    background-blend-mode:overlay;
+    color: white;
+    line-height: 30px;
+
+    
+}

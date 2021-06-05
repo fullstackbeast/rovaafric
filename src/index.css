@@ -1,6 +1,7 @@
 :root {
-  --theme-green: #bada55;
+  --theme-green: #2c724f;
   --deep-theme-green: #bada55;
+  --image-card-width: 220px;
 }
 
 body {
