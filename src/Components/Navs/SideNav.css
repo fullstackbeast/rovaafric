@@ -9,6 +9,7 @@
     box-shadow: 2px 2px 2px #eee;
     transform: translateX(-300px);
     transition: .8s;
+    z-index: 9999;
 }
 
 .sidenav-container.open {

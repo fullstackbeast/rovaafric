@@ -1,0 +1,5 @@
+.testimonials-container{
+    display: flex;
+    /* border: 2px solid red; */
+    overflow-x: scroll;
+}
