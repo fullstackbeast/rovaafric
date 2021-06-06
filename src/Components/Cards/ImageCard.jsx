@@ -1,9 +1,9 @@
 import React from 'react'
 
-import teamImg from '../../Images/team.jpg'
+// import teamImg from '../../Images/team.jpg'
 
 
-const imageCard = ({ color }) => {
+const imageCard = ({img, angle }) => {
 
 
 
@@ -11,10 +11,10 @@ const imageCard = ({ color }) => {
         position: "absolute",
         width: "var(--image-card-width)",
         height: "var(--image-card-width)",
-        backgroundImage: `url(${teamImg})`,
+        backgroundImage: `url(${img})`,
         backgroundSize: "cover",  
         borderRadius: "20px",
-        transform: "rotate(-9deg)"
+        transform: `rotate(${angle})`
     }
 
     return (

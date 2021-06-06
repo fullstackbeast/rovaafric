@@ -32,15 +32,15 @@
 .blog-details>*{
     margin: 0;
 }
-.blog-details h5{
+/* .blog-details h5{
    
-}
+} */
 .blog-details h3{
     font-size: 18px;
     text-transform: capitalize;
     text-align: center;
 }
-.blog-details p{
+/* .blog-details p{
    
-}
+} */
 

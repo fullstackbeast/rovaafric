@@ -1,0 +1,29 @@
+.teamcard-container {
+    /* border: 2px solid red; */
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    margin-bottom: 15px;
+}
+
+
+.staff-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex: 0 0 75%;
+    height: 20px;
+}
+
+.staff-details{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.staff-details>* {
+    margin: 0;
+}

@@ -5,6 +5,8 @@ import ColorCard from '../Cards/ColorCard'
 import ImageCard from '../Cards/ImageCard'
 
 import signature from '../../Images/signature.svg'
+import teamImg from '../../Images/team.jpg'
+
 
 
 const AboutSummary = () => {
@@ -17,7 +19,7 @@ const AboutSummary = () => {
         <>
             <div style={{ display: "flex", marginTop: "50px", marginBottom: "40px", justifyContent: "center" }}>
                 <ColorCard />
-                <ImageCard />
+                <ImageCard img={teamImg} angle="-9deg"/>
             </div>
 
             <h3>Leading <span style={{ color: "var(--theme-green)" }}>Invesment</span> Company</h3>

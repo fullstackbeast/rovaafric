@@ -1,3 +1,9 @@
+import React from 'react'
+
+import user1 from '../../Images/user1.jpg'
+import user2 from '../../Images/user2.jpg'
+import user3 from '../../Images/user3.jpg'
+
 const intialState = {
     isSideNavOpen: false, 
     companyDetails:{
@@ -8,7 +14,25 @@ const intialState = {
             {
                 designation: "CEO", 
                 name: "Muhammad Garba"
-            }
+            },
+            {
+                designation : "staff", 
+                name: "Isreal Mark", 
+                image : user1,
+                desc: "Business and Financial expert"
+            },
+            {
+                designation : "staff", 
+                name: "Mayowa Ireoluwa", 
+                image : user2,
+                desc: "Expert Forex Trader"
+            },
+            {
+                designation : "staff", 
+                name: "Dwean Sean", 
+                image : user3,
+                desc: "Experienced Business Analyst"
+            },
         ]
     }
 }
