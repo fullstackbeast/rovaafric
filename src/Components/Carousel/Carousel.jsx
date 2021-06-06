@@ -37,14 +37,32 @@ const Carousel = () => {
         autoplaySpeed: 3000
     };
 
+
     return (
         <div className="carousel-container">
             <Slider className="carousel-slider" {...settings}>
                 {
-                    carouselItems.map(it => <div className="carousel-item">
-                        <img src={it.image} alt="" />
+                    carouselItems.map(it => <div className="carousel-item" >
+                        <div className="carousel-item-content" style={{ backgroundImage: `url(${it.image})` }}>
+                            <div className="carousel-blackoverlay">
+                                <div className="carousel-content">
+                                    <span className="carousel-company-name">ROVA AFRIC GROUP</span>
+
+                                    <h5 className="carousel-content-title">Clear <span style={{ color: "var(--theme-green)" }}>Investing</span> Make Your Money Grow</h5>
+
+                                    <p className="carousel-content-desc">We are here to make your money work for you. Invest with us and earn consistent and stable profit.</p>
+                                    
+                                    <div className="carousel-content-button">
+                                        <button> WORK WITH US </button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
                     </div>)
                 }
+
             </Slider>
         </div>
     )
