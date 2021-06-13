@@ -2,6 +2,7 @@
   --theme-green: #2c724f;
   --deep-theme-green: #bada55;
   --image-card-width: 220px;
+  --desktop-breakpoint: 830px;
 }
 
 body {
@@ -15,4 +16,19 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@media only screen and (min-width: 830px) {
+  .hide-on-medium-upward {
+      display: none;
+  }
+  :root{
+    --image-card-width: 300px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  :root{
+    --image-card-width: 400px;
+  }
 }

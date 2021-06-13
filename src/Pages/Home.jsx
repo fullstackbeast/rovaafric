@@ -35,19 +35,21 @@ const Home = () => {
                 <h3>TESTIMONIALS</h3>
                 <Testimonials />
             </section>
+            <section className="grouped-page-section">
+                <section className="page-section">
+                    <h3>Why Choose Us</h3>
+                    <WhyChooseUs />
+                </section>
 
-            <section className="page-section">
-                <h3>Why Choose Us</h3>
-                <WhyChooseUs />
+                <ContactFormPlugin />
             </section>
-            
-            <ContactFormPlugin />
+
 
             <section className="page-section">
                 <h3>From Our Blog</h3>
                 <Blog />
             </section>
-            
+
         </div>
     )
 

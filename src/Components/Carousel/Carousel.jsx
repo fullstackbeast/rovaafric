@@ -49,12 +49,14 @@ const Carousel = () => {
                                     <span className="carousel-company-name">ROVA AFRIC GROUP</span>
 
                                     <h5 className="carousel-content-title">Clear <span style={{ color: "var(--theme-green)" }}>Investing</span> Make Your Money Grow</h5>
+                                    <div className="carousel-down">
+                                        <p className="carousel-content-desc">We are here to make your money work for you. Invest with us and earn consistent and stable profit.</p>
 
-                                    <p className="carousel-content-desc">We are here to make your money work for you. Invest with us and earn consistent and stable profit.</p>
-                                    
-                                    <div className="carousel-content-button">
-                                        <button> WORK WITH US </button>
+                                        <div className="carousel-content-button">
+                                            <button> WORK WITH US </button>
+                                        </div>
                                     </div>
+
 
                                 </div>
                             </div>

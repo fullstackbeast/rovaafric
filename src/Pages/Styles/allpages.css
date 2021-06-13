@@ -1,9 +1,34 @@
-.page-section{
+.page-section {
     padding: 0px 10px;
     margin-top: 40px
 }
 
-.paragraph-text{
+.paragraph-text {
     text-align: justify;
     line-height: 30px;
+}
+
+.grouped-page-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+@media only screen and (min-width: 930px) {
+    .grouped-page-section {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid green;
+    }
+    .grouped-page-section>section , .grouped-page-section>div {
+        flex: 1 1 50%;
+    }
+    .grouped-page-section>section{
+        border: 2px solid red;
+        /* height: 100%; */
+    }
+    .grouped-page-section>div {
+        border: 2px solid blue;
+    }
 }

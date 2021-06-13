@@ -3,6 +3,8 @@ import ServiceCard from '../Cards/ServiceCard'
 import { BiChalkboard } from 'react-icons/bi'
 import { GiCoins } from 'react-icons/gi'
 
+import './Services.css'
+
 const Services = () => {
 
     const services = [
@@ -16,10 +18,20 @@ const Services = () => {
             title: "Strategy",
             desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, labore! Different Startegies l"
         },
+        {
+            icon: <BiChalkboard className="service-card-icon"/>,
+            title: "Strategy",
+            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, labore! Different Startegies l"
+        },
+        {
+            icon: <BiChalkboard className="service-card-icon"/>,
+            title: "Strategy",
+            desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, labore! Different Startegies l"
+        },
     ]
 
     return (
-        <div>
+        <div className="services-container">
 
             {
                 services.map(service => <ServiceCard service={service} />)

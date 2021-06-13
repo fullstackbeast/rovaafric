@@ -32,7 +32,7 @@
     height: 85%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding: 0px 15px;
     padding-top: 40px;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
@@ -42,6 +42,12 @@
 .carousel-company-name {
     font-family: "Rubik", sans-serif;
     font-size: 20px;
+}
+
+.carousel-down{
+    /* border: 2px solid red; */
+    flex: 1 0 40%;
+    
 }
 
 .carousel-content-title {
@@ -68,12 +74,30 @@
     padding: 15px;
 }
 
-/* 
-.carousel-content button{
-    background-color: var(--theme-green);
-    color: white;
-    border: none;
-    outline: none;
-    font-weight: 500;
-    padding: 15px;
-} */
+@media only screen and (min-width: 830px) {
+    .carousel-content{
+        width: 60%;
+        margin-left: 30px;
+        justify-content: space-around;
+    }
+    /* .carousel-down{
+        margin-bottom: 130px; 
+        
+    } */
+    .carousel-company-name {
+        font-size: 30px;
+        letter-spacing: 30%;
+    }
+    .carousel-content-title {
+        font-size: 45px;
+        line-height: 70px;
+        max-width: 500px;
+        margin: 0;
+        margin: 1em 0;
+    }
+    .carousel-content-desc {
+        font-size: 20px;
+       width: 70%;
+        line-height: 35px;
+    }
+}

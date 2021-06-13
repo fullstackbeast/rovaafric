@@ -3,3 +3,6 @@
     /* border: 2px solid red; */
     overflow-x: scroll;
 }
+.testimonials-container .testimonial-card-container{
+    flex: 1 0 70%;
+}

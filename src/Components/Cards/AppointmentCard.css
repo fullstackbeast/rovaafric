@@ -10,3 +10,18 @@
 
     
 }
+
+
+@media only screen and (min-width: 830px) {
+   
+    .appointment-card-container {
+        display: flex;
+        font-size: 1.5em;
+        padding: 10px 50px;align-items: center;
+    }
+    .appointment-card-container>h3{
+        margin-left: 40px;
+        font-size: 1.7em;
+        letter-spacing: 3px;
+    }
+}
