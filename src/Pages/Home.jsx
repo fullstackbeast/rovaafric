@@ -36,8 +36,8 @@ const Home = () => {
                 <Testimonials />
             </section>
             <section className="grouped-page-section">
-                <section className="page-section">
-                    <h3>Why Choose Us</h3>
+                <section>
+                    <h3 className="grouped-page-section-title" >Why Choose Us</h3>
                     <WhyChooseUs />
                 </section>
 

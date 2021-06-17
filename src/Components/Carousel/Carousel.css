@@ -23,7 +23,7 @@
 .carousel-blackoverlay {
     width: 100%;
     height: 100%;
-    background-color: rgba(51, 49, 49, 0.39);
+    background-color: rgba(51, 49, 49, 0.603);
     /* display: absolute; */
 }
 
@@ -35,7 +35,7 @@
     /* justify-content: space-between; */
     padding: 0px 15px;
     padding-top: 40px;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.651);
     /* border: 2px solid red; */
 }
 

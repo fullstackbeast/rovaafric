@@ -26,21 +26,24 @@ const About = () => {
             <section className="page-section">
                 <OurMission />
             </section>
-            <section className="page-section">
-                <h3>Why Choose Us</h3>
-                <WhyChooseUs />
+            <section className="grouped-page-section">
+                <section>
+                    <h3 className="grouped-page-section-title" >Why Choose Us</h3>
+                    <WhyChooseUs />
+                </section>
+
+                <ContactFormPlugin />
             </section>
-            <section className="page-section">
-                <h3>Meet The Team</h3>
-                <Team />
-            </section>
+            
             <section className="page-section">
                 <h3>TESTIMONIALS</h3>
                 <Testimonials />
             </section>
             <section className="page-section">
-                <ContactFormPlugin />
+                <h3>Meet The Team</h3>
+                <Team />
             </section>
+            
 
         </div>
     )

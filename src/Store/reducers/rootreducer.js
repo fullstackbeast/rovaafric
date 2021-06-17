@@ -32,6 +32,7 @@ const intialState = {
                 desc: "Experienced Business Analyst"
             },
         ]
+    
     }
 }
 

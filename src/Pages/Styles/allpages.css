@@ -15,20 +15,33 @@
 }
 
 @media only screen and (min-width: 930px) {
+
+    .page-section, .grouped-page-section {
+        padding: 0px 50px;
+
+    }
     .grouped-page-section {
         flex-direction: row;
         align-items: center;
-        justify-content: center;
-        border: 2px solid green;
+        /* justify-content: center; */
+        /* border: 2px solid green; */
     }
     .grouped-page-section>section , .grouped-page-section>div {
         flex: 1 1 50%;
     }
     .grouped-page-section>section{
-        border: 2px solid red;
-        /* height: 100%; */
+        /* border: 2px solid red; */
+        order: 2;
+        align-self: center;
+        /* margin-bottom: 60px; */
     }
     .grouped-page-section>div {
-        border: 2px solid blue;
+        /* border: 2px solid blue; */
+        order: 1;
+        margin-right: 20px;
+    }
+
+    .grouped-page-section-title{
+        margin-bottom: 2em;
     }
 }

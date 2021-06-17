@@ -17,3 +17,16 @@
 .testimonial-card-container p{
     text-align: justify;
 }
+
+@media only screen and (min-width: 930px) {
+    .testimonial-card-container {
+        margin-bottom: 2em;
+    } 
+    .testimonial-card-container h4{
+        font-size: 1.1em;
+    } 
+    .testimonial-card-container p{
+        font-size: 1.3em;
+        line-height: 200%;
+    } 
+}

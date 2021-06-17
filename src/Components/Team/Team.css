@@ -1,0 +1,15 @@
+.team-section-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 930px) {
+    .team-section-container {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        overflow-x: scroll;
+    }
+    .team-section-container>.teamcard-container {
+        flex: 0 1 30%;
+    }
+}

@@ -5,6 +5,31 @@
   --desktop-breakpoint: 830px;
 }
 
+::-webkit-scrollbar {
+  width: 0.6em;
+  height: 1em
+}
+
+::-webkit-scrollbar-button {
+  background: ghostwhite
+}
+
+::-webkit-scrollbar-track-piece {
+  background: ghostwhite
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2193b0;
+  /* fallback for old browsers */
+  
+  background: -webkit-linear-gradient(to top, #609b53, #3bc277);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #609b53, #3bc277);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: 2px 2px 2px #eee;
+  border-radius: 10px;
+}
+
 body {
   margin: 0;
   box-sizing: border-box;

@@ -26,7 +26,7 @@ const AboutSummary = () => {
                     <ImageCard img={teamImg} angle="-9deg" />
                 </div>
             </Slide>
-            <div className="about-us-section-description" >
+            <div className="about-us-section-description" > 
                 <h3  className="about-us-section-title" >Leading <span style={{ color: "var(--theme-green)" }}>Investment</span> Company</h3>
                 <Fade top>
                     <p className="paragraph-text">

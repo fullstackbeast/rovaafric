@@ -1,0 +1,16 @@
+.blog-section-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 930px) {
+    .blog-section-container {
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .blog-section-container>.blogcard-container{
+        flex: 0 1 30%;
+
+    }
+}
