@@ -20,7 +20,7 @@ const TopNav = () => {
             <div>
                 <FontAwesomeIcon className="hide-on-medium-upward" icon={faBars} size="2x" onClick={() => dispatch({ type: 'TOOGGLESIDEBAR' })} />
             </div>
-            <div className="top-nav-list-container">
+            {/* <div className="top-nav-list-container">
                 <ul className="top-nav-links-list">
                     {
                         NavLinks.map(navLink =>
@@ -29,7 +29,7 @@ const TopNav = () => {
                             </li>)
                     }
                 </ul>
-            </div>
+            </div> */}
         </div>
     )
 }

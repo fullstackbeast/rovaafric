@@ -1,13 +1,27 @@
 import React from 'react'
+import ContactCard from '../Components/Cards/ContactCard'
+import ContactForm from '../Components/Form/ContactForm'
+import MiniHero from '../Components/Hero/MiniHero'
 import Map from '../Components/Map/Map'
+
+import contactheaderImg from '../Images/contactheader.jpg'
 
 
 const ContactUs = () => {
 
     return (
         <div>
-            <h1>Contact Us</h1>
-            <Map/>
+            <MiniHero img={contactheaderImg} text="CONTACT US" />
+            <div style={{display: "flex", flexDirection: "column", marginTop:"20px"}}>
+                <Map />
+               <ContactCard/>
+            </div>
+            <div>
+                <h6>CONTACT US</h6>
+                <p>We are Always Here To Answer You</p>
+                <ContactForm/>
+            </div>
+
         </div>
     )
 

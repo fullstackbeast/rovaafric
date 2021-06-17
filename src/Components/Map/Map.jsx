@@ -15,11 +15,11 @@ const WrappedMap = withScriptjs(withGoogleMap(MapTemplate));
 
 const Map = () => {
     return (
-        <div style={{ height: "100vh", width: "100vw" }}>
+        <div style={{ height: "50vh", zIndex: "10" }}>
             <WrappedMap
                 googleMapURL={`https://maps.googleapis.com/maps/api/js?key=AIzaSyC4R6AN7SmujjPUIGKdyao2Kqitzr1kiRg&v=3.exp&libraries=geometry,drawing,places`}
                 loadingElement={<div style={{ height: "100%" }} />}
-                containerElement={<div style={{ height: "400px" }} />}
+                containerElement={<div style={{ height: "100%" }} />}
                 mapElement={<div style={{ height: "100%" }} />}
 
             />

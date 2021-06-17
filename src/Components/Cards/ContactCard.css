@@ -1,0 +1,35 @@
+.contact-card-container{
+   /* border: 2px solid red; */
+   max-width: 1000px; 
+   margin: 0px auto; 
+   margin-top: -50px; 
+   width: 90%; 
+   z-index: 50; 
+   min-height: 300px; 
+   background-color: var(--theme-green);
+   color: white;
+   padding: 20px;
+   box-sizing: border-box;
+}
+
+.address-summary{
+   font-size: 2em;
+}
+.address-summary span{
+   font-weight: 900;
+}
+
+.contact-card-section{
+   margin-top: 1em;
+}
+
+.contact-card-section h5{
+   margin: 0;
+   margin-bottom: 5px;
+   
+}
+.contact-card-section p{
+   margin: 0 !important;
+   color: #b3d1c2;
+   
+}
