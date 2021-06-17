@@ -12,14 +12,18 @@ const ContactUs = () => {
     return (
         <div>
             <MiniHero img={contactheaderImg} text="CONTACT US" />
-            <div style={{display: "flex", flexDirection: "column", marginTop:"20px"}}>
+            <div style={{ display: "flex", flexDirection: "column", marginTop: "20px" }}>
                 <Map />
-               <ContactCard/>
+                <ContactCard />
             </div>
-            <div>
-                <h6>CONTACT US</h6>
-                <p>We are Always Here To Answer You</p>
-                <ContactForm/>
+            <div style={{marginTop:"2em"}}>
+
+                <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                    <h6 style={{ margin: "0" }}>CONTACT US</h6>
+                    <p>We are Always Here To Answer You</p>
+                </div>
+
+                <ContactForm />
             </div>
 
         </div>

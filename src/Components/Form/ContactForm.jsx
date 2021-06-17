@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
-import './ContactForm.css'
 import Inputfield from './Inputfield';
+import './ContactForm.css'
 
 const ContactForm= () =>{
     const [userDetails, setUserDetails] = useState({});
@@ -16,7 +16,7 @@ const ContactForm= () =>{
 
 
     return(
-        <div>
+        <div className="contact-form-container">
                <form className="form-container">
                 <Inputfield fieldType="text" fieldLabel="FULL NAME" fieldId="fullname" placeHolder="Enter your full name" handler={handleInput} />
                 
@@ -33,7 +33,7 @@ const ContactForm= () =>{
                 
                 <input type="submit" value="Send Message" className="submitbutton" />
             </form>
-        </div>
+        </div> 
     )
 
 } 
