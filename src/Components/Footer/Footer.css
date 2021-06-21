@@ -1,5 +1,5 @@
 .footer-container{
-    border-top: 2px solid var(--theme-green);
+    border-top: 2px solid var(--grey-text);
     margin-top: 50px;
     padding: 20px;
     display: flex;
