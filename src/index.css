@@ -3,6 +3,7 @@
   --deep-theme-green: #bada55;
   --image-card-width: 220px;
   --desktop-breakpoint: 830px;
+  --grey-text: #999999;
 }
 
 ::-webkit-scrollbar {

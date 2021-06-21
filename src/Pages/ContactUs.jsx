@@ -16,7 +16,7 @@ const ContactUs = () => {
                 <Map />
                 <ContactCard />
             </div>
-            <div style={{marginTop:"2em"}}>
+            <div style={{margin: "0px auto", marginTop:"5em", maxWidth: "1000px"}}>
 
                 <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                     <h6 style={{ margin: "0" }}>CONTACT US</h6>

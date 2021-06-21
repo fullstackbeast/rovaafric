@@ -45,3 +45,9 @@
     font-weight: 700;
     
 }
+
+@media only screen and (max-width: 825px) {
+    .top-nav-list-container{
+        display: none;
+    }
+}
