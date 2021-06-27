@@ -47,7 +47,7 @@ const Home = () => {
 
             <section className="page-section">
                 <h3>From Our Blog</h3>
-                <Blog />
+                <Blog count={3} />
             </section>
 
         </div>

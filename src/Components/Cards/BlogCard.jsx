@@ -1,22 +1,34 @@
 import React from 'react'
 import './BlogCard.css'
 
-import { Slide, Fade } from 'react-reveal'
+import { Slide } from 'react-reveal'
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min'
 
-const BlogCard = () => {
+
+const BlogCard = ({ blog }) => {
+
+    const history = useHistory();
+
+    
+
+    const handleClick = (title) => {
+        const slug = title.toLowerCase().replace(/ /g, "-");
+        history.push(`/blog/${slug}`);
+    }
+
     return (
         <Slide bottom>
-            <div className="blogcard-container">
-                <div className="blogcard-image-container" style={{ backgroundImage: "url(https://source.unsplash.com/random)" }}>
+            <div className="blogcard-container" onClick={()=>handleClick(blog.title)}>
+                <div className="blogcard-image-container" style={{ backgroundImage: `url(${blog.image})` }}>
                     {/* <img src="" alt="" /> */}
                 </div>
                 <div className="blog-details">
 
-                    <h5>Category</h5>
+                    <h5>{blog.category}</h5>
 
-                    <h3>Impact of holidays on the forex market</h3>
+                    <h3>{blog.title}</h3>
 
-                    <p>June 13, 2020 by <span>Admin</span> </p>
+                    <p>{blog.date} by <span>{blog.author}</span> </p>
                 </div>
             </div>
 
