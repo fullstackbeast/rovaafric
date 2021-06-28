@@ -1,0 +1,21 @@
+.categories-component-container{
+    margin: 5px 0px;
+}
+.categories-component-container h2{
+ font-family: "Rubik", sans-serif;
+}
+.categories-item-container{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.categories-item{
+    padding: 10px 0px;
+    /* border-top: 1px solid #eee; */
+    border-bottom: 1.5px solid rgb(189, 185, 185);
+    text-decoration: none;
+    font-size: 1.1em;
+    color: var(--grey-text);
+
+}

@@ -1,0 +1,30 @@
+.blogpage-container {}
+
+.blogpage-content-container {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-items-container{
+    flex: 1;
+}
+
+.search-and-categories-container{
+ /* border: 2px solid red;    */
+ width: 100%;
+ max-width: 400px;
+ margin: 0px auto;
+}
+
+@media only screen and (min-width: 830px) {
+    .blogpage-content-container {
+       
+        flex-direction: row;
+    }
+
+    .blog-items-container{
+       margin-right: 20px;
+    }
+    
+}

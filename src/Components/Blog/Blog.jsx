@@ -17,7 +17,7 @@ const Blog = ({ count, title }) => {
             {
                 
                 Blogs.map((blog, index) =>
-                index < blogCount && blog.title!=title ? <BlogCard blog={blog} /> : null
+                index < blogCount && blog.title!==title ? <BlogCard blog={blog} /> : null
             )
             }
         </div>
