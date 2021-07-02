@@ -7,22 +7,29 @@ import BlogPage from './Pages/Blog';
 import BlogDetails from './Pages/BlogDetails';
 import ContactUs from './Pages/ContactUs';
 import Home from './Pages/Home';
+import AdminLayout from './Pages/Admin/AdminLayout';
 
 function App() {
   return (
     <div className="App">
 
       <BrowserRouter>
-        <TopNav />
-        <SideNav />
+
         <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/about' component={About} />
-          <Route exact path='/contact' component={ContactUs} />
-          <Route exact path='/blog' component={BlogPage} />
-          <Route exact path='/blog/:slug' component={BlogDetails} />
+          <Route exact path='/admin/:controller' component={AdminLayout} />
+          <>
+            <TopNav />
+            <SideNav />
+            <Route exact path='/' component={Home} />
+            <Route exact path='/about' component={About} />
+            <Route exact path='/contact' component={ContactUs} />
+            <Route exact path='/blog' component={BlogPage} />
+            <Route exact path='/blog/:slug' component={BlogDetails} />
+            <Footer />
+          </>
+
         </Switch>
-        <Footer />
+
       </BrowserRouter>
     </div>
   );

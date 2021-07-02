@@ -5,6 +5,9 @@ import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 import Blog from '../Components/Blog/Blog';
 import Categories from '../Components/Categories/Categories';
 import SearchBox from '../Components/Form/SearchBox';
+import { format } from 'date-fns'
+
+import firebase from '../firebase'
 
 import './Styles/BlogDetails.css'
 
@@ -20,14 +23,38 @@ const BlogDetails = () => {
     useEffect(() => {
         var cBlog = Blogs.find(blog => blog.title.toLowerCase().replace(/ /g, "-") === param.slug);
 
-        setCurrentBlog(cBlog);
+        if (cBlog === undefined) {
+            firebase.firestore().collection('blogs')
+                .where('slug', '==', param.slug)
+                .get()
+                .then(res => res.forEach(r => {
+                    setCurrentBlog(r.data())
 
-        let ps = cBlog.text.split("\n");
 
-        setParagraphs(ps);
+                    console.log(r.data())
+                    
+                    let ps = r.data().text.split("\n");
+
+                    setParagraphs(ps);
+                }))
+                .catch(err =>{
+                    console.log(err)
+                })
+        }
+        else {
+            setCurrentBlog(cBlog);
+            let ps = cBlog.text.split("\n");
+
+            setParagraphs(ps);
+        }
+
+
 
 
     }, [Blogs, param.slug, paragraphs]);
+
+    
+
 
     return (
         <>
@@ -51,8 +78,10 @@ const BlogDetails = () => {
                                 <img src={currentBlog.image} alt="" width="100%" />
                             </div>
 
+
+                            
                             <div>
-                                <span style={{ color: "var(--theme-green)" }}>{currentBlog.category.toUpperCase()}</span> - <span style={{ color: "#959da5" }}>{currentBlog.date}</span> by <span style={{ fontWeight: "bold" }}>{currentBlog.author}</span>
+                                <span style={{ color: "var(--theme-green)" }}>{currentBlog.category.toUpperCase()}</span> - <span style={{ color: "#959da5" }}>{format( currentBlog.date, 'PPP')}</span> by <span style={{ fontWeight: "bold" }}>{currentBlog.author}</span>
                             </div>
 
                             <div style={{ padding: "5px" }}>

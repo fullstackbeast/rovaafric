@@ -61,7 +61,7 @@ const intialState = {
         },
         {
             image: "https://source.unsplash.com/random",
-            title: "Our New Investment Plans",
+            title: "Our New Investment Plan",
             author: "Admin",
             date: "June 13, 2020",
             category: "Funds",
