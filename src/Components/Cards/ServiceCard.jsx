@@ -8,8 +8,6 @@ const ServiceCard = ({ service }) => {
             {service.icon}
             <h4 className="service-card-title">{service.title}</h4>
             <p className="service-card-desc">{service.desc}</p>
-
-            <span>Read more &gt;</span>
         </div>
     )
 }

@@ -26,12 +26,12 @@ const AboutSummary = () => {
                     <ImageCard img={teamImg} angle="-9deg" />
                 </div>
             </Slide>
-            <div className="about-us-section-description" > 
-                <h3  className="about-us-section-title" >Leading <span style={{ color: "var(--theme-green)" }}>Investment</span> Company</h3>
+            <div className="about-us-section-description" >
+                <h3 className="about-us-section-title" >Leading <span style={{ color: "var(--theme-green)" }}>Investment</span> Company</h3>
                 <Fade top>
                     <p className="paragraph-text">
-                        Rova Afric Group is a leading invesment company located in Lagos State Nigeria. We have an unbeatable record and flawless profit history. <br /> <br />
-                        We are commited to making our clients financially stable. We have strategies and fund management discipline that can withstand any condition and survive through the test of time.
+                        Rova Afric Group is a leading global investment banking, securities, and investment management organisation that serves a large and diverse customer base of corporations, financial institutions, governments, and individuals.  <br /> <br />
+                        At Rova Afric Group we provide underwriting and mergers and acquisitions advisory services by delivering exceptional client service, acting with integrity and responsibility.
                     </p>
                 </Fade>
                 <div>

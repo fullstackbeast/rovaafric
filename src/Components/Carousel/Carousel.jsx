@@ -46,11 +46,11 @@ const Carousel = () => {
                         <div className="carousel-item-content" style={{ backgroundImage: `url(${it.image})` }}>
                             <div className="carousel-blackoverlay">
                                 <div className="carousel-content">
-                                    <span className="carousel-company-name">ROVA AFRIC GROUP</span>
+                                    {/* <span className="carousel-company-name">ROVA AFRIC GROUP</span> */}
 
-                                    <h5 className="carousel-content-title">Clear <span style={{ color: "var(--theme-green)" }}>Investing</span> Make Your Money Grow</h5>
+                                    <h5 className="carousel-content-title">Our <span style={{ color: "var(--theme-green)" }}>Clients</span> Always Come First</h5>
                                     <div className="carousel-down">
-                                        <p className="carousel-content-desc">We are here to make your money work for you. Invest with us and earn consistent and stable profit.</p>
+                                        <p className="carousel-content-desc">We serve them through a worldwide network based on collaboration, integrity, and a common goal of fostering long-term economic growth and financial opportunity.</p>
 
                                         <div className="carousel-content-button">
                                             <button> WORK WITH US </button>
